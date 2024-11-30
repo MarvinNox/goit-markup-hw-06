@@ -17,11 +17,11 @@ img {
 }
 .container {
   max-width: 1158px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
 .wrapper-main-page {
   display: block;
   background-color: #2e2f42;
