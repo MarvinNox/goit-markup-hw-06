@@ -19,21 +19,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      href="./images/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
   </head>
   <body>
-    <!------HEADER STARTS -->
+    <!-- #region Header -->
     <header class="wrapper-header">
       <div class="container header-flex">
         <nav class="navig-continer">
-          <!--LOGO starts-->
           <a href="./index.html" class="logo"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <!--LOGO ends-->
           <ul class="nav-list">
-            <li><a href="./index.html" class="link-nav">Studio</a></li>
-            <li><a href="./index.html" class="link-nav">Portfolio</a></li>
-            <li><a href="" class="link-nav">Contacts</a></li>
+            <li><a href="./index.html" class="link-nav current">Studio</a></li>
+            <li><a href="#Portfolio" class="link-nav">Portfolio</a></li>
+            <li><a href="#" class="link-nav">Contacts</a></li>
           </ul>
         </nav>
         <address class="header-contacts">
@@ -52,17 +56,19 @@
         </address>
       </div>
     </header>
-    <!----MAIN STARTS-->
+    <!-- #endregion Header -->
     <main>
-      <!--#region SECTION 1 MAIN -->
+      <!--#region SECTION 1 HERO -->
       <section class="wrapper-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-main">Order Service</button>
+          <button id="open-modal" type="button" class="button-main">
+            Order Service
+          </button>
         </div>
       </section>
-      <!--#endregion-->
-      <!--#region SECTION 2 -- LIST OF advantages -->
+      <!--#endregion Hero-->
+      <!--#region SECTION 2 -- LIST OF Advantages -->
       <section class="advantages-wrapper">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
@@ -118,7 +124,7 @@
           </ul>
         </div>
       </section>
-      <!--#endregion-->
+      <!--#endregion Advantages-->
       <!--#region SECTION 3 -- OUR Team section -->
       <section class="wrapper-team">
         <div class="container">
@@ -305,7 +311,7 @@
       </section>
       <!--#endregion-->
       <!--#region SECTION 4 -- Our Portfolio -->
-      <section class="wrapper-portf">
+      <section id="Portfolio" class="wrapper-portf">
         <div class="container">
           <h2 class="title-second">Our Portfolio</h2>
           <ul class="portf-list">
@@ -441,7 +447,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <!--Social box start-->
+        <!-- Social box start-->
         <div class="footer-soc-box">
           <p class="footer-social-txt">Social media</p>
           <ul class="social-box-list">
@@ -497,11 +503,11 @@
         </div>
       </div>
     </footer>
-    <!--#endregion-->
+    <!--#endregion Footer-->
     <!--#region MODAL WINDOW-->
-    <div class="modal-overlay">
+    <div id="modal-window" class="modal-overlay">
       <div class="modal">
-        <button type="button" class="bttn-close">
+        <button id="close-modal" type="button" class="bttn-close">
           <svg width="8" height="8" class="icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -577,10 +583,11 @@
               <a href="" class="checkbox-link">Privacy Policy</a>
             </label>
           </div>
-          <button type="button" class="button-main">Send</button>
+          <button type="submit" class="button-main">Send</button>
         </form>
       </div>
     </div>
-    <!--#endregion-->
+    <!--#endregion Modal-->
+    <script src="script.js"></script>
   </body>
 </html>
