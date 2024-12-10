@@ -154,7 +154,7 @@ button {
 a.current {
   color: #404bbf;
 }
-.nav-list > li:first-child > .link-nav::after {
+.current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -169,6 +169,19 @@ a.current {
 .link-nav:focus,
 .link-nav:hover {
   color: #404bbf;
+}
+li:hover > .link-nav::after,
+li:focus > .link-nav::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+  margin: 0;
+  padding: 0;
 }
 /* #endregion Header */
 /* #region Hero */
