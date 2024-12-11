@@ -124,6 +124,7 @@ button {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .navig-continer {
   display: flex;
@@ -160,7 +161,7 @@ button {
     margin: 0 auto;
   }
   .navig-continer {
-    padding: 16px 0;
+    padding: 18px 0;
   }
   .nav-list {
     display: none;
@@ -243,6 +244,16 @@ li:focus > .link-nav::after {
 .contacts-list-link:focus {
   color: #404bbf;
 }
+/* #region Mobile Menu */
+.mobile_menu-bttn {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+}
+/* #endregion Mobile Menu */
 /* #endregion Header */
 /* #region Hero */
 .wrapper-hero {
@@ -743,11 +754,17 @@ li:focus > .link-nav::after {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 .bttn-close {
   position: absolute;
@@ -852,7 +869,7 @@ li:focus > .link-nav::after {
 .text-input {
   display: block;
   border-radius: 4px;
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding: 8px 16px;
