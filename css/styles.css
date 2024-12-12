@@ -54,7 +54,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -82,7 +82,7 @@ button {
   margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
-.portf-list .title-third {
+.team-list .title-third {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
@@ -166,6 +166,7 @@ button {
   }
 }
 .link-nav {
+  display: block;
   position: relative;
   color: #2e2f42;
   font-weight: 500;
@@ -213,8 +214,6 @@ li:focus > .link-nav::after {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -235,12 +234,23 @@ li:focus > .link-nav::after {
 .contacts-list-link {
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
 }
 .contacts-list-link:hover,
 .contacts-list-link:focus {
   color: #404bbf;
 }
-/* #region Mobile Menu */
+@media screen and (min-width: 1158px) {
+  .contacts-list-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+} /* #region Mobile Menu */
 .mobile_menu-bttn {
   display: flex;
   border: none;
@@ -276,8 +286,13 @@ li:focus > .link-nav::after {
   padding: 188px 0;
 }
 @media (min-resolution: 2dppx) {
-  .logo {
-    background-image: url("../images/people-office@2x.jpg");
+  .wrapper-hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office@2x.jpg");
   }
 }
 @media screen and (max-width: 1157px) {
@@ -351,7 +366,7 @@ li:focus > .link-nav::after {
 }
 .advantages-item {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .advantages-list {
@@ -360,7 +375,6 @@ li:focus > .link-nav::after {
     flex-wrap: wrap;
   }
   .advantages-item {
-    text-align: left;
     width: calc((100% - 24px) / 2);
   }
 }
@@ -370,7 +384,6 @@ li:focus > .link-nav::after {
     flex-direction: row;
   }
   .advantages-item {
-    text-align: left;
     width: calc((100% - 3 * 24px) / 4);
   }
 }
@@ -401,11 +414,6 @@ li:focus > .link-nav::after {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 1157px) {
-  .wrapper-team .container {
-    padding: 0 108px;
-  }
-}
 @media screen and (max-width: 767px) {
   .wrapper-team .container {
     padding: 0 28px;
@@ -418,7 +426,6 @@ li:focus > .link-nav::after {
 }
 .team-list {
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   margin: auto;
   padding: 0;
@@ -509,6 +516,11 @@ li:focus > .link-nav::after {
 .portf-card {
   text-align: left;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portf-card-name .title-third {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
   .portf-list {
@@ -630,6 +642,11 @@ li:focus > .link-nav::after {
 .footer-soc-box {
   margin: 72px auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 584px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-logo-box {
     margin-right: 24px;
@@ -711,6 +728,11 @@ li:focus > .link-nav::after {
   line-height: 200%;
   letter-spacing: 0.04em;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .footer-form-input {
+    width: 288px;
+  }
 }
 .button-footer {
   display: flex;
