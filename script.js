@@ -9,3 +9,8 @@ openBttn.addEventListener("click", () => {
 closeBttn.addEventListener("click", () => {
   modalOpener.classList.remove("is-open");
 });
+window.addEventListener("click", (event) => {
+  if (event.target === modalOpener) {
+  modalOpener.classList.remove("is-open");
+  }
+});

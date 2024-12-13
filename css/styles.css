@@ -1,4 +1,7 @@
 /* #region Core */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -7,10 +10,6 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  font-style: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 img {
   display: block;
@@ -34,6 +33,7 @@ main {
 }
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 .visually-hidden {
   position: absolute;
@@ -104,7 +104,6 @@ button {
   padding-top: 0;
   padding-bottom: 0px;
   margin: 0;
-  letter-spacing: 0.02em;
 }
 /* #endregion Core */
 /* #region Header */
@@ -185,8 +184,6 @@ a.current {
   width: 100%;
   height: 4px;
   background: #404bbf;
-  margin: 0;
-  padding: 0;
 }
 .link-nav:focus,
 .link-nav:hover {
@@ -202,8 +199,6 @@ li:focus > .link-nav::after {
   width: 100%;
   height: 4px;
   background: #404bbf;
-  margin: 0;
-  padding: 0;
 }
 .header-contacts {
   font-style: normal;
@@ -311,7 +306,6 @@ li:focus > .link-nav::after {
       url("../images/people-office-mob.jpg");
   }
 }
-
 .hero-title {
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -340,7 +334,6 @@ li:focus > .link-nav::after {
   color: #ffffff;
   background-color: #4d5ae5;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   border: none;
   border-radius: 4px;
@@ -558,7 +551,6 @@ li:focus > .link-nav::after {
 .portf-card-overlay {
   position: absolute;
   background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #f4f4fd;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -618,11 +610,9 @@ li:focus > .link-nav::after {
   margin-bottom: 0;
   margin-top: 0;
   width: 264px;
-  letter-spacing: 0.02em;
 }
 .footer-social-txt {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #fff;
   margin-top: 0;
@@ -719,7 +709,6 @@ li:focus > .link-nav::after {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   outline: none;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
@@ -729,7 +718,6 @@ li:focus > .link-nav::after {
   padding-left: 16px;
 }
 .footer-form-input::placeholder {
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
@@ -750,7 +738,6 @@ li:focus > .link-nav::after {
   min-width: 165px;
   height: 40px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-align: center;
@@ -829,13 +816,11 @@ li:focus > .link-nav::after {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #2e2f42;
   margin: 0;
   margin-bottom: 16px;
-  letter-spacing: 0.02em;
 }
 .form {
   display: flex;
@@ -864,10 +849,7 @@ li:focus > .link-nav::after {
   display: block;
   cursor: pointer;
   margin-bottom: 4px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  line-height: 117%;
-  letter-spacing: 0.04em;
+
   color: #8e8f99;
 }
 .lttl-bttn {
@@ -881,7 +863,6 @@ li:focus > .link-nav::after {
   height: 40px;
   outline: transparent;
   padding-left: 38px;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
@@ -910,7 +891,6 @@ li:focus > .link-nav::after {
   resize: none;
   padding: 8px 16px;
   outline: transparent;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
@@ -924,7 +904,6 @@ li:focus > .link-nav::after {
   border-radius: 4px;
 }
 .text-input::placeholder {
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
@@ -935,7 +914,6 @@ li:focus > .link-nav::after {
 }
 .form-checkbox-label {
   gap: 4px;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
@@ -1006,7 +984,6 @@ li:focus > .link-nav::after {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 .mobile-current {
@@ -1025,7 +1002,6 @@ li:focus > .link-nav::after {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 .mobile-contacts-link.number {
@@ -1044,8 +1020,3 @@ li:focus > .link-nav::after {
   }
 }
 /* #endregion */
-/* 
-1. Задать паддінг для лого хедер 100% чтоб посилання ворк ін
-убрать их с нав конт.
-2.
- */
