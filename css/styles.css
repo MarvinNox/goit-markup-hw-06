@@ -717,6 +717,9 @@ li:focus > .link-nav::after {
   padding-bottom: 8px;
   padding-left: 16px;
 }
+.footer-form-input:focus-within {
+  border: 1px solid #4d5ae5;
+}
 .footer-form-input::placeholder {
   font-size: 12px;
   line-height: 200%;
