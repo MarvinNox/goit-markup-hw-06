@@ -48,18 +48,18 @@ button {
   overflow: hidden;
 }
 .container {
-  min-width: 320px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -639,8 +639,9 @@ li:focus > .link-nav::after {
   margin: 72px auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container {
-    width: 584px;
+  .wrapper-team .container,
+  .wrapper-footer .container {
+    max-width: 584px;
   }
 }
 @media screen and (min-width: 768px) {
